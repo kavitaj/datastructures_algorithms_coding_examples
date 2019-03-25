@@ -1,6 +1,6 @@
 package com.math.examples;
 
-public class Fibonacci {
+public class  Fibonacci {
      //Dynamic Programming Bottom Up Approach
      //We start solving the problem with the smallest possible inputs and store it for future.
      //Now as we calculate for the bigger values use the stored solutions (solution for smaller problems).

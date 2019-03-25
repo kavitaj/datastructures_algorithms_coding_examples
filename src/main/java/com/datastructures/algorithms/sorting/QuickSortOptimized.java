@@ -13,24 +13,18 @@ public class QuickSortOptimized {
         while (i <= j) {
             // Find leftmost value greater than or equal to the pivot.
             while (data[i] < pivotValue) i++;
-
             // Find rightmost value less than or equal to the pivot.
             while (data[j] > pivotValue) j--;
 
             // Swap the values at the two indices if those indices have not yet crossed.
             if (i <= j) {
-                swap(data, i, j);
-                i++;
-                j--;
+                swap(data, i, j);   i++;  j--;
             }
         }
-
         // Apply the algorithm to the partitions we made, if any.
-
         if (left < j) {
             quicksortOptimized(data, left, j);
         }
-
         if (i < right) {
             quicksortOptimized(data, i, right);
         }

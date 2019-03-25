@@ -2,7 +2,7 @@ package com.datastructures.algorithms.sorting;
 
 import static com.datastructures.algorithms.sorting.InsertionSort.insertionSort;
 
-public class MergeSortSimple {
+public class  MergeSortSimple {
     // Sort an array using a simple but inefficient merge sort.
 
     //The best, average, and worst-case running times for merge sort are all O(n log(n)),

@@ -24,13 +24,11 @@ public class QuickSortSimple {
         int leftCount = 0;
 
         // Count how many are less than the pivot
-
         for ( int i = 0; i < data.length; ++i ){
             if ( data[ i ] < pivotValue ) ++leftCount;
         }
 
         // Allocate the arrays and create the subsets
-
         int[] left = new int[ leftCount ];
         int[] right = new int[ data.length - leftCount - 1 ];
 
