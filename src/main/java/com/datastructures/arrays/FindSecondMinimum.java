@@ -1,6 +1,17 @@
 package com.datastructures.arrays;
 
 public class FindSecondMinimum {
+
+    // Find max value in an unsorted array of ints.
+    public static int findMin (int [] A, int startIndex) {
+        if (startIndex == A.length - 1) {
+            return A[startIndex];
+        } else {
+            return Math.min(A[startIndex],
+                    findMin(A, startIndex + 1));
+        }
+    }
+
     public static int getMinIndex(int[] values) {
         int minValue = Integer.MAX_VALUE;
         int minIndex = -1;

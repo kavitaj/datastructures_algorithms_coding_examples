@@ -27,7 +27,6 @@ public class QuickSortSimple {
         for ( int i = 0; i < data.length; ++i ){
             if ( data[ i ] < pivotValue ) ++leftCount;
         }
-
         // Allocate the arrays and create the subsets
         int[] left = new int[ leftCount ];
         int[] right = new int[ data.length - leftCount - 1 ];
@@ -37,18 +36,14 @@ public class QuickSortSimple {
 
         for ( int i = 0; i < data.length; ++i ){
             if ( i == pivotIndex ) continue;
-
             int val = data[ i ];
-
             if ( val < pivotValue ){
                 left[ l++ ] = val;
             } else {
                 right[ r++ ] = val;
             }
         }
-
         // Sort the subsets
-
         quicksortSimple( left );
         quicksortSimple( right );
 

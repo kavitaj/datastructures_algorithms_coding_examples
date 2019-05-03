@@ -2,6 +2,10 @@ package com.datastructures.algorithms.sorting;
 
 public class SelectionSortStable {
 
+    //an in-place comparison sort.
+    //O(n2) time complexity, making it inefficient on large lists, and
+    //generally performs worse than the similar insertion sort.
+
     // Sort an array using a stable selection sort.
     public static void selectionSortStable( int[] data ){
         for ( int start = 0; start < data.length - 1; ++start ){
