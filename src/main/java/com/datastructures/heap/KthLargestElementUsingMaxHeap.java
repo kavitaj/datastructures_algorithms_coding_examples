@@ -1,6 +1,14 @@
 //Build maxHeap of the given array. 
 //Extract the maximum element/root and add it to the result
 //Reduce the length of array and repeatedly build maxHeap till we reach K.
+/*Explanation #
+We first create a max-heap out of the given array by inserting the list elements into an empty heap. Then we then call buildMaxHeap()on the heap kk times save the output in a list and return it.
+
+Time Complexity #
+The time complexity of creating a heap is O(n)O(n) and removing min is O(klogn)O(klogn).
+
+Therefore, we can say that the total time complexity is O(n+klogn)O(n+klogn).*/
+
 class KthLargestElementUsingMaxHeap 
 {
   public static int[] findKLargest(int[] arr, int k) {
