@@ -1,4 +1,4 @@
-class FindThreeElementsWithMatchingSum{
+class FindIfThreeElementsWithMatchingSumExists{
   static boolean findSumOfTwo(int[] A, int val, int startIndex) {
 
     for (int i = startIndex, j = A.length - 1; i < j;) {
