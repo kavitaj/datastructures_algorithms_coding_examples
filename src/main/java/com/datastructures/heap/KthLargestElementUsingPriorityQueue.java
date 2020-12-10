@@ -2,7 +2,7 @@ package com.datastructures.heap;
 
 import java.util.PriorityQueue;
 
-public class KthLargestElementUsingHeap {
+public class KthLargestElementUsingPriorityQueue {
 
     //Time complexity of n*log(k) is an improvement to Solution using Arrays.sort
     // For Arrays.sort, the time is O(nlog(n)).
