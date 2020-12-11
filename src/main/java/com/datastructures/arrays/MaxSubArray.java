@@ -32,17 +32,29 @@ public class MaxSubArray {
     //Time Complexity: O(N)
     //Space Complexity: O(1)
 
-    public int getMaxSubarraySumOptimized(int[] array){
-        int currentMax = Integer.MIN_VALUE;
-        int totalMax =  Integer.MIN_VALUE;
 
-        for(int i = 0; i < array.length; i++){
-            currentMax = Math.max(currentMax, 0) + array[i];
-            totalMax = Math.max(totalMax, currentMax);
-        }
-        return totalMax;
+    static int getMaxSubarraySumOptimized(int[] A) {
+    if (A.length < 1) {
+      return 0;
     }
 
+    int currMax = A[0];
+    int globalMax = A[0];
+    for (int i = 1; i < A.length; ++i) {
+
+      if (currMax < 0) {
+        currMax = A[i];
+      } else {
+        currMax += A[i];
+      }
+
+      if (globalMax < currMax) {
+        globalMax = currMax;
+      }
+    }
+
+    return globalMax;
+  }
 
     public static void main(String[] args) {
         int[] input = { 2, 3, 4, -5, 7, -8,3, 2, 1, 6 };
