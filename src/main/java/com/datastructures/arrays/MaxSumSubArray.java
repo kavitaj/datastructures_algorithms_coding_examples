@@ -2,7 +2,7 @@ package com.datastructures.arrays;
 
 import com.recursion.backtracking.SubSetSum;
 
-public class MaxSubArray {
+public class MaxSumSubArray {
 
     //Given an array, the algorithm to find the maximum subarray sum is called Kadane’s Algorithm.
     //Let’s take an array dp[] where each dp[i] denotes maximum subarray sum ending at index i (including i).
@@ -58,7 +58,7 @@ public class MaxSubArray {
 
     public static void main(String[] args) {
         int[] input = { 2, 3, 4, -5, 7, -8,3, 2, 1, 6 };
-        MaxSubArray maxSubArray = new MaxSubArray();
+        MaxSumSubArray maxSubArray = new MaxSumSubArray();
         int maxsum= maxSubArray.getMaxSubarraySumOptimized(input);
         System.out.println(maxsum);
     }
