@@ -2,6 +2,7 @@ package com.datastructures.arrays;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class RemoveDuplicate {
@@ -35,14 +36,12 @@ public class RemoveDuplicate {
     //Use LinkedHashSet to preserve the input order
     public static int[] removeDuplicatesUsingHashSet(int[] arr){
         int end = arr.length;
-        Set<Integer> set = new HashSet<>();
-
+        Set<Integer> set = new LinkedHashSet<>();
         for(int i = 0; i < end; i++){
             set.add(arr[i]);
         }
         //now if you iterate through this set, it will contain only unique values.
         set.forEach(System.out::println);
-
         return set.stream().mapToInt(Integer::intValue).toArray();
     }
 

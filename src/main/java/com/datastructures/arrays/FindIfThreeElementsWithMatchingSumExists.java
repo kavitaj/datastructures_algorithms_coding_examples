@@ -1,13 +1,20 @@
-/*Runtime complexity #
+package com.datastructures.arrays;/*Runtime complexity #
 The runtime complexity of this solution is quadratic, O(n^2)
 
 Memory complexity #
 The memory complexity of this solution is constant, O(1)O(1).
-By sorting the array, we have to change the input array itself. If we are not allowed to modify the input array, then we can use a hash table to achieve the same time complexity (see the first solution of Sum of Two Values problem). However, this will require O(n)O(n) of extra memory.
+By sorting the array, we have to change the input array itself.
+If we are not allowed to modify the input array,
+then we can use a hash table to achieve the same time complexity
+(see the first solution of Sum of Two Values problem).
+However, this will require O(n) of extra memory.
 
-Another alternative approach is to create a copy of the input array and sort that rather than sorting the original.
+Another alternative approach is to create a copy of the input array
+and sort that rather than sorting the original.
 */
 
+
+import java.util.Arrays;
 
 class FindIfThreeElementsWithMatchingSumExists{
   static boolean findSumOfTwo(int[] A, int val, int startIndex) {

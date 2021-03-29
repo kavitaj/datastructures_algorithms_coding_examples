@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 /*
 Explanation #
 Firstly, we store all the elements from the array into a HashMap. The element is stored as key and the count of multiple occurrences is stored as value in the HashMap. Initially, the count is 0. But if the same element is encountered again, the count is increased by 1 each time.

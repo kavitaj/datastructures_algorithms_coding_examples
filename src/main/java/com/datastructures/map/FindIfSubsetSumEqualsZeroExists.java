@@ -1,4 +1,4 @@
-//Hash Set  =>  HashSet<Integer> hSet = new HashSet<>();
+package com.datastructures.map;//Hash Set  =>  HashSet<Integer> hSet = new HashSet<>();
 //HashMap   =>  HashMap<Integer,String> hMap = new HashMap<>();  
 //HashTable =>  Hashtable<Integer,String> hTable = new Hashtable<>();  
 //Hash Set Functions => {add(), remove(), contains()}
@@ -21,6 +21,8 @@ Time Complexity #
 As always, a linear iteration over n elements means that the algorithm’s time complexity is O(n).
 */
 
+import java.util.HashMap;
+
 class FindIfSubsetSumEqualsZeroExists {
 
   public static boolean findSubZero(int[] arr) {
@@ -30,7 +32,7 @@ class FindIfSubsetSumEqualsZeroExists {
     //arr[i] == 0 or sum == 0 or HashMap already contains the sum
     //If you completely traverse the array and havent found any of the above three
     //conditions then simply return false.
-    HashMap < Integer,Integer > hMap = new HashMap < >();
+    HashMap< Integer,Integer > hMap = new HashMap < >();
 
     int sum = 0;
 

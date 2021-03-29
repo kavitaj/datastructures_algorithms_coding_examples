@@ -1,4 +1,6 @@
 /*
+package com.datastructures.linkedlist;*/
+/*
 Explanation #
 This is, perhaps, the most efficient way of removing duplicates from a linked list.
 
@@ -8,7 +10,15 @@ prevNode is used to keep track of the preceding node. This allows us to easily m
 
 Time Complexity #
 This is a linear algorithm, hence, the time complexity is O(n)O(n).
-*/
+*//*
+
+
+import com.datastructures.linkedlist.SinglyLinkedList;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
 
 class RemoveDuplicatesUsingHashSet {
     public static <V> void removeDuplicatesWithHashing(SinglyLinkedList<V> list) {
@@ -51,4 +61,7 @@ class RemoveDuplicatesUsingHashSet {
         System.out.println("List after deleting duplicates from list :");
         list.printList();
     }
+
+
 }
+*/

@@ -1,4 +1,4 @@
-/*
+package com.datastructures.arrays;/*
 Runtime complexity #
 The runtime complexity of this solution is exponential, O(2^n), where nn is the number of integers in the given set.
 
@@ -7,9 +7,15 @@ The memory complexity of this solution is logarithmic, O(logn).
 
 This recursive solution has O(logn) memory complexity as it will consume memory on the stack.
 In this solution, we will recursively generate subsets of the given list. 
-While generating a subset, if the subset’s sum is already greater than the KK, we will drop/skip that subset and continue generating the rest of the subsets.
+While generating a subset,
+if the subset’s sum is already greater than the KK,
+we will drop/skip that subset and continue generating the rest of the subsets.
 */
 
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 class SubsetSumUsingRecursion{
   static void getKSumSubsetsRec(List<Integer> list, List<Integer> partialList, Integer targetSum, List<HashSet<Integer>> sets) {

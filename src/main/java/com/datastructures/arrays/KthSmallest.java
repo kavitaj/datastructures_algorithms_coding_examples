@@ -70,5 +70,13 @@ public class KthSmallest {
 		int temp = A[i];
 		A[i]= A[j];
 		A[j] = temp;
-	}	
+	}
+
+
+	public static void main(String[] args){
+		int[] arr={2,4,7,3,9,12,5,23,56};
+		System.out.println(kthSmallest(arr, 4));
+	}
+
+
 }

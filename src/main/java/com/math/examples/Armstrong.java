@@ -11,10 +11,8 @@ package com.math.examples;
 public class Armstrong {
 
 	public static void main(String[] args) {
-
 		boolean isArmstrong = checkIfANumberIsAmstrongOrNot(153);
-        boolean isArmstrong1 = checkIfANumberIsAmstrongOrNot(160);
-		if (isArmstrong1) {
+		if (isArmstrong) {
 			System.out.println("the number is armstrong");
 		} else {
 			System.out.println("the number is not armstrong");

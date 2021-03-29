@@ -6,7 +6,9 @@ public class MaxSumSubArray {
 
     //Given an array, the algorithm to find the maximum subarray sum is called Kadane’s Algorithm.
     //Let’s take an array dp[] where each dp[i] denotes maximum subarray sum ending at index i (including i).
-    //And since we want the maximum subarray sum, we add the current element to the maximum of 0 and previous sum (zero here denotes that we’re starting anew from the current element).
+    //And since we want the maximum subarray sum,
+    // we add the current element to the maximum of 0 and previous sum
+    // (zero here denotes that we’re starting a new from the current element).
     //This problem falls under Dynamic Programming Paradigm.
     //We can say that
      //dp[i]=max(dp(i-1),0)+arr[i]

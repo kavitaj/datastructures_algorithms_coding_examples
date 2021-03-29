@@ -1,3 +1,4 @@
+package com.datastructures.arrays;
 //This is a java program to find the shortest path between source vertex and destination vertex
 import java.util.HashSet;
 import java.util.InputMismatchException;
@@ -126,8 +127,7 @@ public class Dijkstras_Shortest_Path
             System.out.println("Enter the destination ");
             destination = scan.nextInt();
  
-            Dijkstras_Shortest_Path dijkstrasAlgorithm = new Dijkstras_Shortest_Path(
-                    number_of_vertices);
+            Dijkstras_Shortest_Path dijkstrasAlgorithm = new Dijkstras_Shortest_Path(number_of_vertices);
             dijkstrasAlgorithm.dijkstra_algorithm(adjacency_matrix, source);
  
             System.out.println("The Shorted Path from " + source + " to " + destination + " is: ");

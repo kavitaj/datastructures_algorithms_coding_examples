@@ -1,3 +1,8 @@
+package com.datastructures.arrays;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class ShortestPathInMatrixUsingQueue {
    //output shortest path length between two points in a matrix
    private static int[][] move = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
@@ -44,5 +49,11 @@ public class ShortestPathInMatrixUsingQueue {
            return false;
        }
        return true;
+   }
+
+   public static void main(String[] args){
+
+       int[][] test = new int[][]{{1, 7}, {4, 8}, {7, 1}, {0, -1}};
+       System.out.println(shortestPath3(test, 1, 1, 3,1));
    }
 }

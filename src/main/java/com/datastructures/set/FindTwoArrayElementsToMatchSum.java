@@ -1,4 +1,9 @@
-class FindTwoArrayElementsToMatchSum{   
+package com.datastructures.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+class FindTwoArrayElementsToMatchSum{
 /*
 Code Explanation #
 We solve this problem by using a HashSet called set. For every element in the arr array, the difference of key & each element (n-arr[i]) is computed. If it’s not already present in the set, this value is added, and the index moves to the next element of the array.

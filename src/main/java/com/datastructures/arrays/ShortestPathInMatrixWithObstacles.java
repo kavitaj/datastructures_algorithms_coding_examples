@@ -1,4 +1,4 @@
-/*
+package com.datastructures.arrays;/*
 Simplest approach to find the shortest path in a 2D array would be to use BFS technique in the following way.
 Problem:
 Given a 2D array with values as ‘S’, ‘D’, ‘1’ and ‘0’.

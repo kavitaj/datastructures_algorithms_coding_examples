@@ -1,4 +1,5 @@
-package com.string.examples;// Counts the frequency of each of the words in a file given in the command-line,
+package com.string.examples;
+// Counts the frequency of each of the words in a file given in the command-line,
 // and saves in a map of {word, freq}.
 import java.util.Map;
 import java.util.HashMap;

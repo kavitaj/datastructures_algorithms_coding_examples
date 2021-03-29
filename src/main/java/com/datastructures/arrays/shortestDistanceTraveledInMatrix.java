@@ -1,8 +1,10 @@
-/*
-Given N people on an MxM grid, find the point that requires the least total distance covered by all people to meet at that point.
+package com.datastructures.arrays;/*
+Given N people on an MxM grid,
+ find the point that requires the least total distance covered by all people to meet at that point.
 
 We need to find the meeting point(x,y) for these people where the total distance covered by all three is the minimum.
-They can travel in all directions: horizontally, vertically, and diagonally. The minimum distance point, in this case, is (3,3).
+They can travel in all directions: horizontally, vertically, and diagonally.
+The minimum distance point, in this case, is (3,3).
 
 Consider a 5x5 grid with 3 people; one at X(1,2), Y(4,2), and Z(3,3).
 Runtime complexity #
@@ -13,19 +15,22 @@ In the worst case, if there is a person on each point of the grid, the complexit
 considering there is no repetition in the points.
 
 Memory complexity #
-The memory complexity of this solution is linear, O(n)O(n) where nn is the number of people on the grid.
-The first solution is very straightforward but has greater time complexity. We can calculate the distance between two points using the following Euclidean distance formula.
-
+The memory complexity of this solution is linear, O(n) where n is the number of people on the grid.
+The first solution is very straightforward but has greater time complexity.
+We can calculate the distance between two points using the following Euclidean distance formula.
 d=sqrt{(x2 - x1)^2 + (y2 - y1)^2}
 
 We are using Euclidean distance here because the people on the grid can move diagonally as well. 
-We cannot use Manhattan distance (d = |x2-x1| + |y2-y1|d=∣x2−x1∣+∣y2−y1∣) here because it is a measure of the horizontal and vertical distance 
+We cannot use Manhattan distance (d=∣x2−x1∣+∣y2−y1∣) here
+because it is a measure of the horizontal and vertical distance
 and does not cover the diagonal distance. 
 For each point on the grid, we check if the sum of distances traveled by all people is the minimum or not. 
 We can take the minimum distance as the sum of distances of people from the point (1,1) 
 and then compare it with all the other points on the grid to find the optimum meeting point. 
 */
 
+
+import java.util.ArrayList;
 
 class Point {
   private int x;
@@ -67,9 +72,9 @@ class Point {
     }
     return distanceSum;
   }
-}
+};
 
-class shortestDistanceTraveledInMatrix {
+class Distance {
   public static Point shortestDistanceTraveled(int m, ArrayList<Point> points) {
     Point pt = new Point(1, 1);
     double minDistance = pt.calculateSumOfDistances(points);
@@ -91,6 +96,7 @@ class shortestDistanceTraveledInMatrix {
     }
     return minPt;
   }
+
 
   public static void main(String[] args) {
 
